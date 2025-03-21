@@ -1,0 +1,49 @@
+Natsuna@Tosaki MINGW64 ~ (main)
+$ cd "C:\Users\lunam\challenge"
+
+Natsuna@Tosaki MINGW64 ~/challenge (main)
+$ # カレントディレクトリにgit_challengeディレクトリを作成する
+mkdir git_challenge
+
+Natsuna@Tosaki MINGW64 ~/challenge (main)
+$ cd git_challenge/
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ # カレントディレクトリにローカルリポジトリを新規作成する
+git init
+Initialized empty Git repository in C:/Users/lunam/challenge/git_challenge/.git/
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ echo "hello,world" >> hello_world.txt
+
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ git add hello_world.txt
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ git commit -m "hello_world.txtを追加"
+[main 35a81a0] hello_world.txtを追加
+ 1 file changed, 1 insertions(+)
+ create mode 100644 hello_world.txt
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ echo "こんにちは、世界!">>hello_world.txt
+
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ git add hello_world.txt
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ git commit -m "日本語訳を追記"
+[main 6f954e1] 日本語訳を追記
+ 1 file changed, 2 insertions(+)
+
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+Natsuna@Tosaki MINGW64 ~/challenge/git_challenge (main)
+
+$ git log --oneline
+6f954e1 (HEAD -> main) 日本語訳を追記
+35a81a0 hello_world.txtを追加
